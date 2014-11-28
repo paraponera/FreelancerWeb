@@ -58,20 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Migrations\201411191240491_InitialSchema.cs" />
     <Compile Include="Migrations\201411191240491_InitialSchema.Designer.cs">
       <DependentUpon>201411191240491_InitialSchema.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Mapping\bankMap.cs" />
-    <Compile Include="Models\Mapping\categoryMap.cs" />
-    <Compile Include="Models\Mapping\claimMap.cs" />
-    <Compile Include="Models\Mapping\jobMap.cs" />
-    <Compile Include="Models\Mapping\paymentMap.cs" />
-    <Compile Include="Models\Mapping\sous_categoriesMap.cs" />
-    <Compile Include="Models\Mapping\userMap.cs" />
-    <Compile Include="Models\pidevContext.cs" />
+    <Compile Include="pidevContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +80,10 @@
     <EmbeddedResource Include="Migrations\201411191240491_InitialSchema.resx">
       <DependentUpon>201411191240491_InitialSchema.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
